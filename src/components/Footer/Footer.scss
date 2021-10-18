@@ -1,0 +1,43 @@
+.footer{
+    max-width: 100%;
+    padding: 30px 0;
+  }
+  
+  .footer_logo{
+    display: flex;
+    align-items: flex-end;
+    color: black;
+    font-size: 12px;
+    line-height: 17,33px;
+    margin-bottom: 20px;
+
+    .logo{
+      margin-left: auto;
+    }
+  }
+  
+  .footer_ourCoffee{
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  
+  .footer_yourCoffee{
+    margin-left: 40px;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  @media (max-width: 380px) {
+  
+    .footer_ourCoffee{
+      margin-left: 15px;
+    }
+  
+    .footer_yourCoffee{
+      margin-left: 15px;
+    }
+  
+    .text{
+      font-size: 20px;
+    }
+  }

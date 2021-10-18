@@ -1,0 +1,50 @@
+.about-coffee{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 30px;
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 240px;
+        height: 1px;
+        background-color: black;
+    }
+
+    .about-discription{
+        padding: 0 5px;
+    }
+
+    .row{
+        display: flex;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    p.text{
+        color: black;
+        text-align: center;
+        line-height: 1.7;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .about-image img{
+        width: 220px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .about-image img{
+        display: none;
+    }
+}

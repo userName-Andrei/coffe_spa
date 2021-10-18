@@ -1,0 +1,81 @@
+.goods-page{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-coffee{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 30px;
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 240px;
+        height: 1px;
+        background-color: black;
+    }
+
+    .about-discription{
+        padding: 0 5px;
+    }
+
+    .row{
+        display: flex;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    p.text{
+        color: black;
+        text-align: center;
+        line-height: 1.7;
+        font-size: 14px;
+    }
+}
+
+.goods-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .goods-item{
+        width: 220px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 15px rgba($color: #000000, $alpha: 0.25);
+        margin: 10px;
+        overflow: hidden;
+        cursor: pointer;
+
+        &_wrap{
+            text-align: center;
+            margin: 37px 27px 20px;
+        }
+
+        p{
+            font-size: 14px;
+            text-align: right;
+
+            &:first-child{
+                text-align: center;
+            }
+
+            &:last-child{
+                font-weight: bold;;
+            }
+        }
+    }
+}
+
+@media (max-width: 724px) {
+    .goods-items{
+        justify-content: center;
+    }
+}

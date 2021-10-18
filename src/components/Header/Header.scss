@@ -1,0 +1,81 @@
+.header{
+    max-width: 100%;
+    padding-bottom: 120px;
+
+    &.main-page{
+      background: no-repeat center/cover url(./img/desk-791178_1920.png);
+    }
+
+    &.our, &.item{
+      background: no-repeat center/cover url(./img/our-1209863_1920.png);
+    }
+
+    &.pleasure{
+      background: no-repeat center/cover url(./img/pleasure-2179009_1920.png);
+    }
+}
+
+.header_logo{
+    padding: 30px 0;
+    margin: 0 0 110px 10%;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-size: 12px;
+    line-height: 17,33px;
+  }
+  
+  .logo{
+    cursor: pointer;
+  }
+  
+  .header_ourCoffee{
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  
+  .header_yourCoffee{
+    margin-left: 40px;
+    cursor: pointer;
+  }
+
+  .text{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 16px 15px;
+}
+
+.btn_more{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    border: 1px solid white;
+    border-radius: 3px;
+    background: rgba($color: #ffffff, $alpha: 0.0);
+    color:white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .header_logo{
+    margin: 0 20px 60px ;
+  }
+
+  .header_ourCoffee{
+    margin-left: 15px;
+  }
+
+  .header_yourCoffee{
+    margin-left: 15px;
+  }
+
+  .text{
+    font-size: 20px;
+  }
+}
